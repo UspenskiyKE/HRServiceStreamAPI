@@ -8,10 +8,10 @@ import java.util.ArrayList;
 
 @RequestMapping("/employee")
 @RestController
-public class EmployeeServiceController {
+public class EmployeeController {
     private final EmployeeService employeeService;
 
-    public EmployeeServiceController(EmployeeService employeeService) {
+    public EmployeeController(EmployeeService employeeService) {
         this.employeeService=employeeService;
     }
 

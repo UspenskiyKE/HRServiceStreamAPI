@@ -22,7 +22,7 @@ public abstract class EmployeeServiceImpl implements EmployeeService{
 
             if(employeeMap.size()<listSize) {
 
-                employeeMap.put(e.getFirstName()+e.getLastName()+e.getDepartment()+e.getSalary(),e);
+                employeeMap.put(e.getFirstName()+e.getLastName(),e);
             }else {
                 throw new EmployeeStorageIsFullException("Employee Storage Is Full!");
             }
@@ -44,8 +44,8 @@ public abstract class EmployeeServiceImpl implements EmployeeService{
         return f;
     }
 
-    public Employee findEmployee(String firstName, String lastName, String department, double salary) {
-        Employee e1=new Employee(firstName,lastName, department,salary);
+    public Employee findEmployee(String firstName, String lastName) {
+        Employee e1=new Employee(firstName,lastName,"",0.0);
         Employee result=null;
         if (employeeMap.containsKey(e1.getFirstName()+e1.getLastName())) {
             result=e1;
