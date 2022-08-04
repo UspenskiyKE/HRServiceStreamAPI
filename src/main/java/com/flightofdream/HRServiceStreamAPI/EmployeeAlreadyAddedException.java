@@ -1,4 +1,4 @@
-package com.flightofdream.HRService;
+package com.flightofdream.HRServiceStreamAPI;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
