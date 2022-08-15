@@ -1,4 +1,4 @@
-package com.flightofdream.HRService;
+package com.flightofdream.EmployeeBookLibraries;
 
 import java.util.Objects;
 

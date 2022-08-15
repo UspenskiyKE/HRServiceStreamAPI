@@ -1,13 +1,7 @@
-package com.flightofdream.HRService;
-
-import org.springframework.stereotype.Service;
-
+package com.flightofdream.EmployeeBookLibraries;
 
 import java.util.HashMap;
-
-
-@Service
-public class EmployeeServiceImpl implements EmployeeService{
+public class EmployeeServiceImpl {
     private final HashMap<String,Employee> employeeMap=new HashMap<>();
     private final int listSize=5;
 
